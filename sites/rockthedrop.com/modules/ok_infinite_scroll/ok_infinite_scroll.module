@@ -1,0 +1,53 @@
+<?php
+
+function ok_infinite_scroll_menu() {
+  $items['inf_scroll'] = array (
+    'title' => 'Infinite Scroll Content',
+    'page_callback' => 'ok_infinite_scroll_next_section',
+//    'access callback' => 'ok_infinite_scroll_access',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK
+  );
+  return $items;
+}
+//    'access callback' => 'ok_infinite_scroll_access',
+//    'access' => true,
+
+function ok_infinite_scroll_access($args = array()) {
+  return true;
+}
+function ok_infinite_scroll_block($op='list', $delta=0, $edit=array()) {
+  switch ($op) {
+    case "list":
+      $block['hp-more-content']['info'] = t('Add More To Home Page');
+      break;
+    case "view":
+      switch ($delta) {
+        case "hp-more-content":
+          $block['subject'] = "";
+          $block['content'] = ok_infinite_scroll_next_section();
+          break;
+        default:
+          break;
+      }
+    default :
+      break;
+  }
+  if (isset($block)) {
+    return $block;
+  }
+}
+  
+function ok_infinite_scroll_next_section($page_num = 0) {
+print "HELLO WORLD";
+return "HELLO WORLD!";
+//  $section_x = views_embed_view("hp_items_standard", "block_2", array("page=3"));
+  
+  $new_view_content = views_get_view("hp_items_standard");
+  $new_view_content->set_current_page($page_num);
+  $section_x = $new_view_content->preview("block_1");
+    
+      
+//  return $section_x;  
+}         
+

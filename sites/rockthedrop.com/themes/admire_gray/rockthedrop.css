@@ -1,0 +1,14 @@
+#header .site-slogan{ float: left; clear: both; font-family: Arial, Helvetica, sans-serif; color:#000; text-decoration:none; font-size:22px; }
+#logocontainer { float: none; padding-top: 10px; }
+#texttitles { float: left; margin: 10px 0 0 7px }
+
+.view-Portfolio .view-content .views-row
+{ margin: 10px 0 0 0; height: 140px; }
+.view-Portfolio .view-content .views-row .views-field-title
+{ font-size:16px; }
+.view-Portfolio .view-content .views-row .views-field-field-portf-image-fid
+{ width:200px; float:left; }
+.view-Portfolio .view-content .views-row .views-field-teaser
+{ width:420px; float:left; margin: 0 0 0 10px; font-size: 16px; }
+.view-Portfolio .view-content .views-row .views-field-teaser p
+{ margin: 0; }

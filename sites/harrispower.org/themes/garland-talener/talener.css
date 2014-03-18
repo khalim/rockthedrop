@@ -1,0 +1,5 @@
+#wrapper { background:url(images/talener-header.jpg) repeat-x scroll 0 0 transparent }
+#wrapper #container #header { height:140px; }
+#wrapper #container #center .right-corner .left-corner { background:none; }
+#wrapper #container #center .right-corner { background:none; }
+#wrapper #container #center #squeeze { background:none; }

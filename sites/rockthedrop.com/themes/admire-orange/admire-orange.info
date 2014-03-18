@@ -1,0 +1,13 @@
+name = Admire Orange
+description = Admire Orange theme by worthapost .
+version = VERSION
+core = 6.x
+engine = phptemplate
+regions[sidebar_right] = Right
+regions[sidebar_left] = Left
+; Information added by drupal.org packaging script on 2010-01-29
+version = "6.x-1.0"
+core = "6.x"
+project = "admire-orange"
+datestamp = "1264777504"
+

@@ -1,0 +1,9 @@
+name = OK Infinite Scroll
+description = Adds infinite scroll ability to Home Page.
+
+; Khalim Harris 2012-12-21
+version = "6.x-0.1"
+core = "6.x"
+package = "OK"
+project = ok_infinite_scroll
+

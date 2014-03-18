@@ -1,0 +1,20 @@
+name = Admire Gray
+description = Quality Theme for Drupal by Worthapost.
+version = 6.1
+core = 6.x
+engine = phptemplate
+
+regions[header] = Header
+regions[sidebar_left] = Sidebar left
+regions[content_top] = Content top
+regions[sidebar_right] = Sidebar right
+regions[footer_block] = Footer block
+; Information added by drupal.org packaging script on 2010-01-29
+version = "6.x-1.2"
+core = "6.x"
+project = "admire_gray"
+datestamp = "1264766704"
+
+stylesheets[all][] = style.css
+stylesheets[all][] = rockthedrop.css
+

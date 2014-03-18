@@ -1,0 +1,5 @@
+; $Id$
+name = "Fivestar Reverse"
+description = "Reverses Display of Fivestar Stars"
+core = 6.x
+package = Other
